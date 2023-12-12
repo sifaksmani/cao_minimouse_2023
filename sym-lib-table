@@ -1,4 +1,6 @@
 (sym_lib_table
   (version 7)
   (lib (name "minimouse")(type "KiCad")(uri "${KIPRJMOD}/minimouse.kicad_sym")(options "")(descr ""))
+  (lib (name "tp1")(type "KiCad")(uri "${KIPRJMOD}/tp1.kicad_sym")(options "")(descr ""))
+  (lib (name "TP1 STSPIN240")(type "KiCad")(uri "${KIPRJMOD}/TP1 STSPIN240.kicad_sym")(options "")(descr ""))
 )

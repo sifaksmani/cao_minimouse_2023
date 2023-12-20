@@ -12,13 +12,11 @@
     (property "Datasheet" "" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (symbol "STSPIN240_0_1"
-      (rectangle (start -8.89 16.51) (end 19.05 -29.21)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
     (symbol "STSPIN240_1_1"
+      (rectangle (start -8.89 16.51) (end 19.05 -29.21)
+        (stroke (width 0) (type solid) (color 255 252 136 1))
+        (fill (type background))
+      )
       (pin input line (at -11.43 11.43 0) (length 2.54)
         (name "PHA" (effects (font (size 1.27 1.27))))
         (number "1" (effects (font (size 1.27 1.27))))

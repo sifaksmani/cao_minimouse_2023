@@ -180,11 +180,11 @@
         )
       )
     )
-    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:+BATT" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "+3.3V" (at 0 3.556 0)
+      (property "Value" "+BATT" (at 0 3.556 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -193,13 +193,13 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "global power" (at 0 0 0)
+      (property "ki_keywords" "global power battery" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"+BATT\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "+3.3V_0_1"
+      (symbol "+BATT_0_1"
         (polyline
           (pts
             (xy -0.762 1.27)
@@ -225,9 +225,9 @@
           (fill (type none))
         )
       )
-      (symbol "+3.3V_1_1"
+      (symbol "+BATT_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3.3V" (effects (font (size 1.27 1.27))))
+          (name "+BATT" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -295,7 +295,7 @@
     (stroke (width 0) (type default))
     (uuid b85406c0-1add-4f90-9444-8f33bc51a129)
   )
-  (wire (pts (xy 139.7 63.5) (xy 139.7 80.01))
+  (wire (pts (xy 139.7 59.69) (xy 139.7 80.01))
     (stroke (width 0) (type default))
     (uuid c1fa3413-22ec-4b92-a588-22f23c00f823)
   )
@@ -311,6 +311,31 @@
   (hierarchical_label "SONAR_ECHO" (shape output) (at 109.22 91.44 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 0e9bbc4f-e703-49b1-8915-42b08419f0ea)
+  )
+
+  (symbol (lib_id "power:+BATT") (at 172.72 41.91 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 18b3c948-aab1-454a-b5d0-a88730e98912)
+    (property "Reference" "#PWR033" (at 172.72 45.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+BATT" (at 172.72 36.83 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 172.72 41.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 172.72 41.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 63ef3b36-1854-4ec3-8f69-035ae6e0d3cc))
+    (instances
+      (project "minimouse"
+        (path "/d8fa4cba-2469-4231-847f-065b6b829f44/224298a9-7d6e-4a70-a0a5-f2614895ec28"
+          (reference "#PWR033") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "power:GND") (at 172.72 62.23 0) (unit 1)
@@ -361,6 +386,31 @@
       (project "minimouse"
         (path "/d8fa4cba-2469-4231-847f-065b6b829f44/224298a9-7d6e-4a70-a0a5-f2614895ec28"
           (reference "U4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+BATT") (at 139.7 59.69 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 70a2e52b-acbf-49ff-b735-a5d30fe4501f)
+    (property "Reference" "#PWR040" (at 139.7 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+BATT" (at 139.7 54.61 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 139.7 59.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 139.7 59.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8f5f31e9-6e00-4bf1-8a01-80ce5c56a697))
+    (instances
+      (project "minimouse"
+        (path "/d8fa4cba-2469-4231-847f-065b6b829f44/224298a9-7d6e-4a70-a0a5-f2614895ec28"
+          (reference "#PWR040") (unit 1)
         )
       )
     )
@@ -438,56 +488,6 @@
       (project "minimouse"
         (path "/d8fa4cba-2469-4231-847f-065b6b829f44/224298a9-7d6e-4a70-a0a5-f2614895ec28"
           (reference "#PWR032") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 139.7 63.5 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid e5e95f71-7911-4076-be8f-58943eaa48a3)
-    (property "Reference" "#PWR033" (at 139.7 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 139.7 58.42 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 139.7 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 139.7 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d12e9f36-a3cf-465e-8745-d7e0c8ac553b))
-    (instances
-      (project "minimouse"
-        (path "/d8fa4cba-2469-4231-847f-065b6b829f44/224298a9-7d6e-4a70-a0a5-f2614895ec28"
-          (reference "#PWR033") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 172.72 41.91 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid fce52743-970c-4878-8d1a-cab2d8fc125e)
-    (property "Reference" "#PWR035" (at 172.72 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 172.72 36.83 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 172.72 41.91 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 172.72 41.91 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1b6e02f5-48c1-4ef4-801c-ea71fec13496))
-    (instances
-      (project "minimouse"
-        (path "/d8fa4cba-2469-4231-847f-065b6b829f44/224298a9-7d6e-4a70-a0a5-f2614895ec28"
-          (reference "#PWR035") (unit 1)
         )
       )
     )
